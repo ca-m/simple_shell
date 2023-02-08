@@ -56,3 +56,16 @@ typedef struct builtins
 } builtins;
 
 /* MAIN FUNCTIONS*/
+
+/* shell.c */
+
+/*initialize structure with info of program*/
+void inicialize_data(data_of_program *data, int arc, char *argv[], char **env);
+
+/*makes infinite loop that shows prompt*/
+void sisifo(char *prompt, data_of_program *data);
+
+/*print prompt in new line*/
+void handle_ctrl_c(int opr UNUSED);
+
+/* getline.c */
