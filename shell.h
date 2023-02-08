@@ -12,3 +12,9 @@
 #include <sys/stat.h> /*use of stat function*/
 #include <signal.h> /*signal management*/
 #include <fcntl.h> /* open files*/
+
+/*MARCOS*/
+
+#include "marcos.h" /*help and prompt*/
+
+
