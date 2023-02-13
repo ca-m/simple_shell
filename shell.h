@@ -69,3 +69,11 @@ void sisifo(char *prompt, data_of_program *data);
 void handle_ctrl_c(int opr UNUSED);
 
 /* getline.c */
+
+/*read one line of stndar input*/
+int _getline(data_of_program *data);
+
+/*split each line for logical operators if exists*/
+int check_logic_ops(char *array_commands[], int i, char array_operators[]);
+
+/* expansions.c */
