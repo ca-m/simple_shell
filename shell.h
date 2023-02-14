@@ -101,3 +101,8 @@ char *_strtok(char *line, char *delim);
 
 
 /* execute.c */
+
+/*execute command with entire path*/
+int execute(data_of_program *data);
+
+/* builtins_list.c */
