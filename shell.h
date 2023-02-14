@@ -158,3 +158,18 @@ int builtin_alias(data_of_program *data);
 
 
 /* builtins_env.c */
+
+/*shows environment where shell runs*/
+int builtin_env(data_of_program *data);
+
+/*creates/override variable of environment*/
+int builtin_set_env(data_of_program *data);
+
+/*delete variable of enviroment*/
+int builtin_unset_env(data_of_program *data);
+
+
+/* HELPERS FOR ENVIRONMENT VARIABLES MANAGEMENT */
+
+
+/* env_management.c */
