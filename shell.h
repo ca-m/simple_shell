@@ -191,3 +191,18 @@ void print_environ(data_of_program *data);
 
 
 /* helpers_print.c */
+
+/*prints string in standar output*/
+int _print(char *string);
+
+/*prints string in standar error*/
+int _printe(char *string);
+
+/*prints string in standar error*/
+int _print_error(int errorcode, data_of_program *data);
+
+
+/* HELPERS FOR STRINGS MANAGEMENT */
+
+
+/* helpers_string.c */
