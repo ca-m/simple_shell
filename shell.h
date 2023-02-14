@@ -125,3 +125,18 @@ int find_program(data_of_program *data);
 
 
 /* helpers_free.c */
+
+/*frees memory for directories*/
+void free_array_of_pointers(char **directories);
+
+/*free fields needed in each loop*/
+void free_recurrent_data(data_of_program *data);
+
+/*free all fields of data*/
+void free_all_data(data_of_program *data);
+
+
+/* BUILTINS */
+
+
+/* builtins_more.c */
