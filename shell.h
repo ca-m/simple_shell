@@ -140,3 +140,21 @@ void free_all_data(data_of_program *data);
 
 
 /* builtins_more.c */
+
+/*close shell*/
+int builtin_exit(data_of_program *data);
+
+/*change current directory*/
+int builtin_cd(data_of_program *data);
+
+/*set work directory*/
+int set_work_directory(data_of_program *data, char *new_dir);
+
+/*show help info*/
+int builtin_help(data_of_program *data);
+
+/*set, unset, show alias*/
+int builtin_alias(data_of_program *data);
+
+
+/* builtins_env.c */
