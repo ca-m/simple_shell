@@ -105,9 +105,23 @@ char *_strtok(char *line, char *delim);
 /*execute command with entire path*/
 int execute(data_of_program *data);
 
+
 /* builtins_list.c */
 
 /*if match a builtin, execute*/
 int builtins_list(data_of_program *data);
 
+
 /* find_in_path.c */
+
+/*creates array of path directories*/
+char **tokenize_path(data_of_program *data);
+
+/*search for program in path*/
+int find_program(data_of_program *data);
+
+
+/* HELPERS FOR MEMORY MANAGEMENT */
+
+
+/* helpers_free.c */
