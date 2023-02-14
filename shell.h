@@ -57,6 +57,7 @@ typedef struct builtins
 
 /* MAIN FUNCTIONS*/
 
+
 /* shell.c */
 
 /*initialize structure with info of program*/
@@ -68,6 +69,7 @@ void sisifo(char *prompt, data_of_program *data);
 /*print prompt in new line*/
 void handle_ctrl_c(int opr UNUSED);
 
+
 /* getline.c */
 
 /*read one line of stndar input*/
@@ -75,6 +77,7 @@ int _getline(data_of_program *data);
 
 /*split each line for logical operators if exists*/
 int check_logic_ops(char *array_commands[], int i, char array_operators[]);
+
 
 /* expansions.c */
 
@@ -87,4 +90,14 @@ void expand_aliases(data_of_program *data);
 /*append string to end of buffer*/
 int buffer_add(char *buffer, char *str_to_add);
 
+
 /* str_tok.c */
+
+/*separate string in tokens using a designed delimiter*/
+void tokenize(data_of_program *data);
+
+/*creates pointer to a part of a string*/
+char *_strtok(char *line, char *delim);
+
+
+/* execute.c */
