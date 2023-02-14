@@ -173,3 +173,21 @@ int builtin_unset_env(data_of_program *data);
 
 
 /* env_management.c */
+
+/*gets value of environment variable*/
+char *env_get_key(char *name, data_of_program *data);
+
+/*overwrite value of environment variable*/
+int env_set_key(char *key, char *value, data_of_program *data);
+
+/*remove key from environment*/
+int env_remove_key(char *key, data_of_program *data);
+
+/*print current environment*/
+void print_environ(data_of_program *data);
+
+
+/* HELPERS FOR PRINTING */
+
+
+/* helpers_print.c */
