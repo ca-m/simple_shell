@@ -236,3 +236,15 @@ int count_chracters(char *string, char *character);
 
 
 /* alias_management.c */
+
+/*print list of alias*/
+int print_alias(data_of_program *data, char *alias);
+
+/*get alias name*/
+char *get_alias(data_of_program *data, char *alias);
+
+/*set alias name*/
+int set_alias(char *alias_string, data_of_program *data);
+
+
+#endif /* SHELL.H */
