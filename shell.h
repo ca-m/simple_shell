@@ -106,3 +106,8 @@ char *_strtok(char *line, char *delim);
 int execute(data_of_program *data);
 
 /* builtins_list.c */
+
+/*if match a builtin, execute*/
+int builtins_list(data_of_program *data);
+
+/* find_in_path.c */
