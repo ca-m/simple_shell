@@ -224,3 +224,15 @@ void str_reverse(char *string);
 
 
 /* helpers_numbers.c */
+
+/*cast from int to string*/
+void long_to_string(long number, char *string, int base);
+
+/*convert string to number*/
+int _atoi(char *s);
+
+/*count coincidences of character in string*/
+int count_chracters(char *string, char *character);
+
+
+/* alias_management.c */
